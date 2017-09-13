@@ -11,15 +11,15 @@ if($_POST){
  
 try {
 $m = new PHPMailer(true);
-$m->isSMTP();
-$m->SMTPAuth = true;
-$m->STMPDebug = 2;
+//$m->isSMTP();
+//$m->SMTPAuth = true;
+//$m->STMPDebug = 2;
 
-$m->Host = 'smtp.gmail.com';
-$m->Username = 'lemauricienweb@gmail.com';
-$m->Password = base64_decode('bG13ZWIxNjE4');
-$m->SMTPSecure = 'ssl';
-$m->Port = 465;
+//$m->Host = 'smtp.gmail.com';
+//$m->Username = 'lemauricienweb@gmail.com';
+//$m->Password = base64_decode('bG13ZWIxNjE4');
+//$m->SMTPSecure = 'ssl';
+//$m->Port = 465;
 
 
 

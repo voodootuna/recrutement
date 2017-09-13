@@ -1,6 +1,6 @@
 <html lang="fr">
 <head>
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link href='./assets/style.css' rel='stylesheet' type='text/css'>
 <link href='./assets/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -13,6 +13,7 @@
     <div class="col-lg-12 col-sm-12">
       <img class="logo" src="./assets/logo.png">
       <h3>Groupe de presse indépendant depuis 1908</h3>
+       <h3 class="">Recrute des<a class="emphasis" href="#info"> Journalistes Web</a></h3>
     </div>
   </div>
 </div>
@@ -35,7 +36,7 @@
           <path id="Retina1" class="st9" d="M281.6,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
           c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C283.5,189.2,282.8,187.5,281.6,186.3z"/>
         </svg>
-        <img id="sanky" src="./assets/sanky.svg">
+        <img id="sanky"  src="./assets/sanky.svg">
       </div>
     </div>
   </div>
@@ -73,9 +74,9 @@
   <div class="row info-row">
 
     <div class="col-md-4 col-md-offset-1 col-sm-12">
-            <h3>Canditature</h3>
+            <h3>Je postule</h3>
 
-       <form>
+       <form id="canditature" action='sendform.php' method="post" enctype="multipart/form-data">
     <div class="form-group">
     
       <div class="input-group">
@@ -90,21 +91,21 @@
         <input id="email" name="email" type="text"  class="form-control"  placeholder="Email" >
       </div>
       <div class="input-group">
-        <input id="tel" name="number" type="text"  class="form-control"  placeholder="Telephone" required>
+        <input id="tel" name="telephone" type="text"  class="form-control"  placeholder="Telephone" required>
       </div>
   
       <div class="input-group">
         <span  id="cms">Experience CMS</span>
         <div class="checkbox">
-          <label><input id="wordpress"  name="wordpress" type="checkbox" value="">Wordpress</label>
-          <label><input id="drupal" name="drupal" type="checkbox" value="">Drupal</label>
-          <label><input id="joomla" name="joomla" type="checkbox" value="">Joomla</label>
-          <label><input id="autres" name="autres" type="checkbox" value="">Autres</label>
+          <label><input id="wordpress"  name="wordpress" type="checkbox" value="wordpress">Wordpress</label>
+          <label><input id="drupal" name="drupal" type="checkbox" value="drupal">Drupal</label>
+          <label><input id="joomla" name="joomla" type="checkbox" value="joomla">Joomla</label>
+          <label><input id="autres" name="autres" type="checkbox" value="autres">Autres</label>
         </div>
       </div>
       <div class="input-group">
       
-        <textarea type="text" class="form-control" placeholder="johndoe@gmail.com" aria-describedby="ddni"></textarea>
+        <textarea  name="info" type="text" class="form-control" placeholder="information additionnel" ></textarea>
       </div>
 
       <div class="input-group">
@@ -113,7 +114,7 @@
           <br/>
           <input id="cv" name="cv" type="file" accept=".doc,.pdf,.rtf,.txt,.xls,.jpg,.png" required>
           <input id="rec" name="rec" type="file" accept=".doc,.pdf,.rtf,.txt,.xls,.jpg,.png" required>
-          <input id="attachment3" name="rec" type="file" accept=".doc,.pdf,.rtf,.txt,.xls,.jpg,.png">
+          <input id="att" name="att" type="file" accept=".doc,.pdf,.rtf,.txt,.xls,.jpg,.png">
         </div>
       </div>
        
@@ -121,7 +122,7 @@
   </div>
 
         <div class="input-group">
-         <button type="submit" class="btn btn-lg btn-danger">Soumettre</button>
+         <button type="submit" class="btn btn-lg btn-block btn-success">Soumettre</button>
     
          </div>
       

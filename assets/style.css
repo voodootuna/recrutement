@@ -2,7 +2,11 @@ body {
   /*height: 100vh; */
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, #87ceeb 100%); 
   /*background-color:#e63440; */
-  font-family:'Roboto';
+  font-family:'Roboto',sans-serif;
+}
+
+h1,h2,h3,h4{
+   font-family:'Roboto',sans-serif;
 }
 
 #logo{
@@ -152,7 +156,7 @@ body {
    background-color:#ffc107;
    color:#fff;
    font-weight:100;
-   padding:40px 10px;
+   padding:70px 10px;
     text-shadow: 0.4px 0.4px #a1a6a8;
 }
 
@@ -215,6 +219,37 @@ text-shadow: 0.4px 0.4px #a1a6a8;
  height: 40px !important;
 letter-spacing: 1px;
 }
+
+.emphasis {
+  font-size:30px;
+ color: #2aaae0;
+ font-weight:bold;
+
+}
+
+
+.float-anim {
+ 
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 30px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
+
+
+
 
 @media only screen and (min-width: 700px) {
   .form-control {

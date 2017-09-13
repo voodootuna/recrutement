@@ -1,7 +1,11 @@
 var tl = new TimelineLite(); 
-tl.staggerFrom(".topics", 3, {
+tl.from(".topics", 4, {
   css:{transform:"scale(0)",top:"60%",left:"50%"},ease:Elastic.easeOut
 }, 0.3);
+
+
+
+
 
 
 var twt = document.getElementById("twt");
@@ -65,4 +69,11 @@ for(var i=0; i< topics.length; i++){
 }
 function retinaout(event) {
     TweenMax.to("#retina", 0.2, {left:"50%",top:"60%"});  
+}
+
+
+
+function sendForm(){
+
+  
 }

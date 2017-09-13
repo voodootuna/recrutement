@@ -125,8 +125,8 @@ body {
   color:#fff;
   font-size:20px;
   font-weight:100;
-   letter-spacing: 1px;
-    text-shadow: 0.4px 0.4px #a1a6a8;
+  letter-spacing: 1px;
+  text-shadow: 0.4px 0.4px #a1a6a8;
 }
 
 #info h3{
@@ -152,7 +152,6 @@ body {
    background-color:#ffc107;
    color:#fff;
    font-weight:100;
-    font-size:20px;
    padding:40px 10px;
     text-shadow: 0.4px 0.4px #a1a6a8;
 }
@@ -214,8 +213,14 @@ text-shadow: 0.4px 0.4px #a1a6a8;
 
 .form-control {
  height: 40px !important;
+letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 700px) {
+  .form-control {
   font-size: 16px !important;
-  letter-spacing: 1px;
+ 
+}
 }
 
 

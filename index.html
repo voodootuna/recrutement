@@ -1,0 +1,39 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='./assets/style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="contact-head">
+  <h2 class="pre">Hello!</h2>
+  <h2 class="post">Thank You!</h2>
+</div>
+<form class="contact-form">
+  <p>My
+    <label for="name">name</label> is
+    <input class="contact-input" id="name" type="text" name="name" placeholder="Jane Doe" autocomplete="off" minlength="3" required="required"//>
+  </p>
+  <p>and my
+    <label for="email">email</label> is
+    <input class="contact-input" id="email" type="email" name="email" value="" placeholder="janedoe@lemauricien.com" autocomplete="off" required="required"/>
+  </p>
+  <p>and I want to at lemauricien.com
+    <label for="message">because</label>
+  </p>
+  <p>
+    <textarea  required="required"/ class="contact-input expanding" id="message" name="message" placeholder="Skills, experience" autocomplete="off"></textarea>
+  </p>
+  <p>
+    <button id="contact-submit-button" type="submit">
+      <svg class="send-icn" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewbox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+        <path d="M100 0 100 0M23.8 7.1 100 0 40.9 36l-4.7-7.5L22 34.8l-4-11L0 30.5 16.4 8.7l5.4 15L23 7 23.8 7.1zM16.8 20.4l-1.5-4.3-5.1 6.7L16.8 20.4zM34.4 25.4l-8.1-13.1L25 29.6 34.4 25.4zM35.2 13.2l8.1 13.1L70 9.9 35.2 13.2z"></path>
+      </svg><small>send</small>
+    </button>
+  </p>
+</form>
+
+
+<script type="text/javascript" src="./assets/script.js"></script>
+</body>
+</html>

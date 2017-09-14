@@ -24,14 +24,16 @@ if($_POST){
     $info = $_POST['info'];
     $telephone = $_POST['telephone'];
 
-    $cms_def = ['drupal', 'wordpress','autres', 'joomla'];
-    $cms_exp = '';
+    //$cms_def = ['drupal', 'wordpress','autres', 'joomla'];
+    //$cms_exp = '';
 
+    /*
     foreach($cms_def as &$cms){
       if(isset($_POST[$cms])){
         $cms_exp.=$cms.' ';
       }
     }
+    */
 
 
     $m->setFrom('noreply@lemauricien.com','Le Mauricien LTD', 0);
@@ -42,8 +44,8 @@ if($_POST){
     //content
     $m->isHTML(true);    
     $m->Subject = "Recrutement Journaliste Web {$lastname} {$firstname}";
-    $m->Body = "<p><strong>Prenom:</strong> $firstname</p><p><strong>Nom:</strong> $lastname </p><p><strong>Tel:</strong>$telephone</p><p><strong>Email:</strong>$email</p><p><strong><p><strong>Expérience CMS:</strong>$cms_exp</p>Message:</strong> $info</p>";
-
+    $m->Body = "<p><strong>Prenom:</strong> $firstname</p><p><strong>Nom:</strong> $lastname </p><p><strong>Tel:</strong>$telephone</p><p><strong>Email:</strong>$email</p><p><strong>Message:</strong> $info</p>";
+    //<p><strong>Expérience CMS:</strong>$cms_exp</p>
 
     //attachments
     foreach($_FILES as &$file){

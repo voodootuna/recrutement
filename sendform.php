@@ -27,7 +27,7 @@ try {
   $info = $_POST['info'];
   $telephone = $_POST['telephone'];
 
-  $cms_def = ['drupal', 'wordpress','autres', 'joomla'];
+  $cms_def = array('drupal', 'wordpress','autres', 'joomla');
   $cms_exp = '';
 
   foreach($cms_def as &$cms){
@@ -50,7 +50,6 @@ try {
 
   //attachments
   foreach($_FILES as &$file){
-    
       if($file['name']){
       $file_tmp = $file['tmp_name'];
       $file_name = $file['name'];

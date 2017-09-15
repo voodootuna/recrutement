@@ -55,7 +55,7 @@ if($_POST){
       $file_name = $file['name'];
       $file_size = $file['size'];
       $file_type = $file['type'];
-      echo 'uploads/'.$file_name.'<br/>';
+      //echo 'uploads/'.$file_name.'<br/>';
       move_uploaded_file($file_tmp,"uploads/".$file_name);
       $m->addAttachment('uploads/'.$file_name);
       }
@@ -64,16 +64,21 @@ if($_POST){
 
     $m->send();
 
-    echo 'Message has been sent';
+    //echo 'Message has been sent';
 
-    echo '<script type="text/javascript">window.location.href="./merci.html"</script>';
-
+    //echo '<script type="text/javascript">window.location.href="./merci.html"</script>';
+    $result = array("status" => "1");
+    echo json_encode($result);
   }catch(Exception $e){
-      echo "<h3 style='color:red'>Une erreur est survenue lors de l'envoi de votre formulaire. Veuillez <a href='http://recrutement.lemauricien.com'>réessayer</a></h3>";
+      //echo "<h3 style='color:red'>Une erreur est survenue lors de l'envoi de votre formulaire. Veuillez <a href='http://recrutement.lemauricien.com'>réessayer</a></h3>";
       //echo 'Mailer Error: ' . $m->ErrorInfo;
+      print "<meta http-equiv=\"refresh\" content=\"0;URL=/404.html\">";
+     
   } 
 
 
 }else{
      die('PAGE INTERDITE');
 }
+
+?>

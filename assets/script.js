@@ -72,8 +72,39 @@ function retinaout(event) {
 }
 
 
+$( document ).ready(function() {
 
-function sendForm(){
+  $('#canditature').submit( function(e) {
+    $('#error').hide();
+     $('#canditature').hide();
+    $('#loading').show();
+  e.preventDefault();
+  var form = new FormData($("#canditature")[0]);
+      $.ajax({
+          url: 'sendform.php',
+          type: 'post',
+          dataType: 'json',
+          processData: false,
+          contentType: false,
+          data: form,
+          success: function(data) {
+                    console.log('success',data);
+                    $('#loading').hide();
+                    window.location.href="merci.html";
+                
+                   },
+          error:function(data){
+            console.log('error',data);
+            $('#error').show();
+            $('#loading').hide();
+            $('#canditature').show();
+          }
+      });
+  });
+   
 
-  
-}
+
+
+
+});
+

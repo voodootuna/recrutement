@@ -37,7 +37,7 @@ if($_POST){
 
 
     $m->setFrom('noreply@lemauricien.com','Le Mauricien LTD', 0);
-    $m->addAddress('lemauricienweb@gmail.com');
+    $m->addAddress('hr@lemauricien.com');
     $m->addReplyTo($email, 'Reply address');
 
 

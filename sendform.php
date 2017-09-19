@@ -53,8 +53,8 @@ if($_POST){
       if($file['name']){
       $file_tmp = $file['tmp_name'];
       $file_name = $file['name'];
-      $file_size = $file['size'];
-      $file_type = $file['type'];
+      //$file_size = $file['size'];
+      //$file_type = $file['type'];
       //$total_filesize += $file_size;
       //echo 'uploads/'.$file_name.'<br/>';
       move_uploaded_file($file_tmp,"uploads/".$file_name);

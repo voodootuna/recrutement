@@ -46,7 +46,7 @@ if($_POST){
     $m->Subject = "Recrutement Journaliste Web {$lastname} {$firstname}";
     $m->Body = "<p><strong>Prenom:</strong> $firstname</p><p><strong>Nom:</strong> $lastname </p><p><strong>Tel:</strong>$telephone</p><p><strong>Email:</strong>$email</p><p><strong>Expérience CMS:</strong>$cms_exp</p><p><strong>Message:</strong> $info</p>";
 
-
+    $total_filesize = 0;
     //attachments
     foreach($_FILES as &$file){
 
@@ -55,6 +55,7 @@ if($_POST){
       $file_name = $file['name'];
       $file_size = $file['size'];
       $file_type = $file['type'];
+      //$total_filesize += $file_size;
       //echo 'uploads/'.$file_name.'<br/>';
       move_uploaded_file($file_tmp,"uploads/".$file_name);
       $m->addAttachment('uploads/'.$file_name);
@@ -73,8 +74,8 @@ if($_POST){
       //echo "<h3 style='color:red'>Une erreur est survenue lors de l'envoi de votre formulaire. Veuillez <a href='http://recrutement.lemauricien.com'>réessayer</a></h3>";
       //echo 'Mailer Error: ' . $m->ErrorInfo;
       print "<meta http-equiv=\"refresh\" content=\"0;URL=/404.html\">";
-     
-  } 
+     //echo json_encode(array("status"=>"1","data"=>$total_filesize);
+  }
 
 
 }else{

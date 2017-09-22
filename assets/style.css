@@ -1,9 +1,6 @@
 body {
-  /*height: 100vh; */
- /* background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, #58add0 100%);*/
- background: radial-gradient(ellipse at center, rgb(206, 188, 35) 10%, #e63440 45%);
-  /*background-color:#e63440; */
-  font-family:'Roboto',sans-serif;
+  background-color:#e63440 !important;
+ font-family:'Roboto',sans-serif;
 }
 
 h1,h2,h3,h4{
@@ -124,9 +121,7 @@ h1,h2,h3,h4{
 
 #info{
   margin-top:180px;
-  /*background-color:#ffc107;*/
- /* background-color:#e63440;*/
- background-color:rgba(230, 52, 64, 0.41);
+  background-color:#607d8b;
   padding:40px 10px;
   color:#fff;
   font-size:20px;

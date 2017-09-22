@@ -155,8 +155,8 @@ h1,h2,h3,h4{
   background-image:url("./laptop.png");
    background-repeat: no-repeat;
    background-position: right; 
-   background-color:#ffc107;
-   color:#fff;
+   background-color:#f5f5f5;
+   color:#222;
    font-weight:100;
    padding:70px 10px;
     text-shadow: 0.4px 0.4px #a1a6a8;
